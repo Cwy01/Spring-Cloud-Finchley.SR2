@@ -1,0 +1,36 @@
+server:
+  port: 8765
+  
+spring:
+  application:
+    name: boot-microservice-api-gateway
+  zipkin:
+    base-url: http://127.0.0.1:9411
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://boot:boot123@127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${server.port}
+      
+feign:
+  hystrix:
+    enabled: true
+    
+zuul:
+  ignoredServices: boot-microservice-order #使用'*'忽略所有的微服务
+  routes:
+    api-pay:
+      path: /a-pay/**
+      serviceId: boot-microservice-pay
+    api-item:
+      path: /a-item/**
+      serviceId: boot-microservice-item
+    api-order:
+      path: /a-order/**
+      serviceId: boot-microservice-order
+  UserLoginZuulFilter:
+    pre:
+      disable: true

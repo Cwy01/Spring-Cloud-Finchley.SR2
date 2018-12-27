@@ -1,0 +1,37 @@
+server:
+  port: 8888
+  
+spring:
+  application:
+    name: boot-microservice-item
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/boot?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  zipkin:
+    base-url: http://127.0.0.1:9411
+
+mybatis:
+  typeAliasesPackage: org.spring.springboot.domain
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://boot:boot123@127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${server.port}
+      
+feign:
+  hystrix:
+    enabled: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"

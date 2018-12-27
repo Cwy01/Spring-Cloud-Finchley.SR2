@@ -1,0 +1,20 @@
+server:
+  port: 9877
+
+spring:
+  application:
+    name: boot-microservice-consul2
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckInterval: 15s
+        tags: version=1.0,author=1233231
+        healthCheckPath: /info.json
+        instance-id: boot-microservice-consul2 #${spring.application.name}:${spring.cloud.client.ipAddress}
+        #enabled: true
+      #config:
+        #enabled: true   #默认是true --
+        #format: YAML    # 表示consul上面文件的格式 有四种 YAML PROPERTIES KEY-VALUE FILES
+        #data-key: application    #表示consul上面的KEY值(或者说文件的名字) 默认是data

@@ -1,0 +1,27 @@
+server:
+  port: 8756
+  
+spring:
+  application:
+    name: boot-microservice-config-server
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  cloud:  
+    config:
+      server:
+        git: #配置git仓库地址
+          uri: https://github.com/Cwy01/boot-config-server-2018_11_11.git
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://boot:boot123@127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${server.port}
+          
+management:
+  security:
+    enabled: false #是否开启actuator安全认证
+
+          

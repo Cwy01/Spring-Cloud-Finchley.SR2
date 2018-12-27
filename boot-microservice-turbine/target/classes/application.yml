@@ -1,0 +1,38 @@
+server:
+  port: 8762
+  
+spring:
+  application:
+    name: boot-microservice-turbine
+  zipkin:
+    base-url: http://127.0.0.1:9411
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://boot:boot123@127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${server.port}
+      
+feign:
+  hystrix:
+    enabled: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+    
+turbine:
+  app-config: boot-microservice-pay,boot-microservice-item,boot-microservice-order
+  aggregator:
+    clusterConfig: default
+  clusterNameExpression: new String("default")
+  combine-host: true
+  instanceUrlSuffix:
+    default: actuator/hystrix.stream 

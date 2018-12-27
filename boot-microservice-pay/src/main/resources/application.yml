@@ -1,0 +1,45 @@
+server:
+  port: 7777
+  
+spring:
+  application:
+    name: boot-microservice-pay
+  zipkin:
+    base-url: http://127.0.0.1:9411
+  http:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 128KB
+  redis:
+    host: localhost
+    port: 6379
+    password: 
+    database: 1
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 500
+      min-idle: 0
+    timeout: 6000
+    
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://boot:boot123@127.0.0.1:8761/eureka/
+    instance:
+      prefer-ip-address: true
+      instance-id: ${spring.application.name}:${server.port}
+      
+feign:
+  hystrix:
+    enabled: true
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    cors:
+        allowed-origins: "*"
+        allowed-methods: "*"
+  

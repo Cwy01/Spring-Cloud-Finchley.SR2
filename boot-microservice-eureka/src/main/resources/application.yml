@@ -1,0 +1,24 @@
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://boot:boot123@${eureka.instance.hostname}:${server.port}/eureka/
+                    #http://${security.user.name}:${security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+     
+  server:
+    enable-self-preservation: false #关闭自我保护
+    eviction-interval-timer-in-ms: 4000 #设置清理间隔
+    
+spring:
+  application:
+    name: boot-microservice-eureka
+  security:
+    user:
+      name: boot
+      password: boot123
