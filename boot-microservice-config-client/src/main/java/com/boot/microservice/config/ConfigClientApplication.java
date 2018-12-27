@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//ConfigClientApplication
+//http://127.0.0.1:9091/profile
 public class ConfigClientApplication {
 
 		public static void main(String[] args) {
