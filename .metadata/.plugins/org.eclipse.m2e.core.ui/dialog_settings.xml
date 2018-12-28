@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.boot.auth2.server"/>
 			<item value="com.boot.config.client"/>
 			<item value="com.boot.auth2"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="boot-microservice-auth2-server"/>
 			<item value="boot-microservice-config-client"/>
 			<item value="boot-microservice-auth2"/>
 		</list>
@@ -61,6 +63,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\java\bootspace\boot-microservice-auth2"/>
 			<item value="F:\java\bootspace\boot-microservice-turbine"/>
 			<item value="F:\java\bootspace\boot-microservice-api-gateway\pom.xml"/>
 			<item value="F:\java\bootspace\boot-microservice-pay\pom.xml"/>
