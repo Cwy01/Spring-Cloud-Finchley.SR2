@@ -1,0 +1,31 @@
+/* “˛≤ÿvueº”‘ÿŒ Ã‚ */
+[v-cloak]{
+	display:none;
+}
+body {
+	margin: 0;
+}
+table{
+	border-collapse:collapse;
+	margin:left;
+	text-align:center;
+}
+
+table td,table tr{
+	border:1px solid #cad9ea;
+	color:#666;
+	height:25px;
+	width:100px;
+}
+table thead td{
+	background-color:#cce8eb;
+	width:100px;
+}
+table tr:nth-child(odd){
+	background:#fff;
+	
+}
+table tr:nth-child(even){
+	background:#f5fafa;
+	
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test for title</title>
+	<script type="text/javascript" src="/js/vue.js"></script>
+	<script type="text/javascript" src="/js/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="/js/main.js"></script>
+	<link href="/css/index.css" rel="stylesheet">
+</head>
+<body>
+	<div id="div_show">
+		<table class="table_list" v-cloak>
+			<tr>
+				<td>id</td>
+				<td>name</td>
+			</tr>
+			<tr v-for="site in sites">
+				<td>{{site.id}}</td>
+				<td>{{site.name}}</td>
+			</tr>
+		</table>
+	</div>
+
+	<form id="form_submit" action="/index/v1/user"
+		method="post">
+		id:<input type="text" name="id"> <br> 
+		name:<input type="text" name="name"> <br> 
+		<input type="submit" value="确定">
+	</form>
+</body>
+</html>
