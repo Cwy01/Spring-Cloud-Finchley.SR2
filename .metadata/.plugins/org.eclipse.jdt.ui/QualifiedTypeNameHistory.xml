@@ -56,4 +56,5 @@
 <fullyQualifiedTypeName name="com.boot.pojo.Role"/>
 <fullyQualifiedTypeName name="org.springframework.security.crypto.password.NoOpPasswordEncoder"/>
 <fullyQualifiedTypeName name="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+<fullyQualifiedTypeName name="com.boot.vue.service.VueService"/>
 </qualifiedTypeNameHistroy>

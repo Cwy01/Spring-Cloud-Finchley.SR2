@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.microservice.vue"/>
 			<item value="com.boot.auth2.server"/>
 			<item value="com.boot.config.client"/>
 			<item value="com.boot.auth2"/>
@@ -9,6 +10,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="boot-microservice-vue"/>
 			<item value="boot-microservice-auth2-server"/>
 			<item value="boot-microservice-config-client"/>
 			<item value="boot-microservice-auth2"/>

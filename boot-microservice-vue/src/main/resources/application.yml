@@ -1,0 +1,14 @@
+server:
+  port: 8585
+  
+spring:
+  mvc:
+    static-path-pattern: /**
+    view:
+      suffix: .html
+      prefix: /
+  resources:
+    static-locations: 
+      classpath:/resources/,
+      classpath:/static/,
+      classpath:/public/
