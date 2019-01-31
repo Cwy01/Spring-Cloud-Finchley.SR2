@@ -7,6 +7,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.boot.vue.pojo.Status;
+import com.boot.vue.pojo.TableStatus;
 import com.boot.vue.service.VueService;
 
 @RestController
@@ -27,7 +28,15 @@ public class VueController {
 		return vueService.topic();
 	}
 	
+	@GetMapping("/api/v1/pieDatas")
+	Status pieDatas() {
+		return vueService.pieDatas();
+	}
 	
+	@GetMapping("/api/v1/tableDatas")
+	TableStatus tableDatas() {
+		return vueService.tableDatas();
+	}
 	
     @GetMapping("/index")
     public ModelAndView index() {
