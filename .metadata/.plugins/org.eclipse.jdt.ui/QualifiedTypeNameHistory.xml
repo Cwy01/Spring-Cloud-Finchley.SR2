@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.netflix.zuul.ZuulFilter"/>
-<fullyQualifiedTypeName name="org.slf4j.LoggerFactory"/>
-<fullyQualifiedTypeName name="com.netflix.zuul.context.RequestContext"/>
-<fullyQualifiedTypeName name="org.apache.catalina.servlet4preview.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder"/>
 <fullyQualifiedTypeName name="reactor.core.publisher.Mono"/>
@@ -24,7 +20,6 @@
 <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ExceptionHandler"/>
 <fullyQualifiedTypeName name="org.hibernate.validator.internal.util.logging.LoggerFactory"/>
@@ -56,8 +51,13 @@
 <fullyQualifiedTypeName name="com.boot.vue.pojo.status"/>
 <fullyQualifiedTypeName name="ch.qos.logback.core.status.Status"/>
 <fullyQualifiedTypeName name="com.boot.vue.pojo.Status"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.boot.vue.pojo.Article"/>
 <fullyQualifiedTypeName name="com.boot.vue.pojo.Author"/>
 <fullyQualifiedTypeName name="com.boot.vue.pojo.Pie"/>
+<fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="javax.persistence.Id"/>
+<fullyQualifiedTypeName name="com.boot.jpa.service.CustomerService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+<fullyQualifiedTypeName name="com.boot.jpa.service.CustomerServiceImpl"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
