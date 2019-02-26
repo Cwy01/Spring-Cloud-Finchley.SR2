@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.microervice.groovey"/>
+			<item value="com.microervice.grovvey"/>
 			<item value="com.microervice.redis"/>
 			<item value="com.microservice.swagger"/>
 			<item value="com.microservice.jpa"/>
@@ -13,6 +15,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com-microervice-groovey"/>
+			<item value="com-microervice-grovvey"/>
 			<item value="com-microservice-redis"/>
 			<item value="boot-microservice-swagger"/>
 			<item value="com-microservice-jpa"/>
