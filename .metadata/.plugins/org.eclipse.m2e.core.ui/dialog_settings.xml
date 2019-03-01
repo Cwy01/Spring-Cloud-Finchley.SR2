@@ -2,6 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.boot.test"/>
+			<item value="com.boot.admin.client"/>
+			<item value="com.boot.admin.server"/>
+			<item value="com.microservice.netty"/>
 			<item value="com.microervice.groovey"/>
 			<item value="com.microervice.grovvey"/>
 			<item value="com.microervice.redis"/>
@@ -15,6 +19,10 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com-boot-test"/>
+			<item value="boot-microservice-admin-client"/>
+			<item value="boot-microservice-admin-server"/>
+			<item value="com-microservice-netty"/>
 			<item value="com-microervice-groovey"/>
 			<item value="com-microervice-grovvey"/>
 			<item value="com-microservice-redis"/>
@@ -75,6 +83,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\java\bootspace\boot-microservice-admin-server\pom.xml"/>
+			<item value="F:\java\bootspace\boot-microservice-eureka"/>
 			<item value="F:\java\bootspace\boot-microservice-auth2"/>
 			<item value="F:\java\bootspace\boot-microservice-turbine"/>
 			<item value="F:\java\bootspace\boot-microservice-api-gateway\pom.xml"/>
