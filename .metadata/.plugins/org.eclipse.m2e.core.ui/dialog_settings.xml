@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.microervice.log4j2"/>
+			<item value="com.boot.slf4j"/>
 			<item value="com.boot.test"/>
 			<item value="com.boot.admin.client"/>
 			<item value="com.boot.admin.server"/>
@@ -19,6 +21,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="com-microervice-log4j2"/>
+			<item value="com-boot-slf4j"/>
 			<item value="com-boot-test"/>
 			<item value="boot-microservice-admin-client"/>
 			<item value="boot-microservice-admin-server"/>
