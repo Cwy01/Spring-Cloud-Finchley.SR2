@@ -40,6 +40,9 @@ Configuration:
           TimeBasedTriggeringPolicy:  # 按天分类
             modulate: true
             interval: 1
+          # 单个日志文件最大128MB,超过后将归档
+          SizeBasedTriggeringPolicy:
+            size: "128 MB"
         DefaultRolloverStrategy:     # 文件最多100个
           max: 100
 #   平台日志
@@ -119,12 +122,12 @@ Configuration:
           - ref: BUSSINESS_ROLLING_FILE
       - name: exception
         level: debug
-        additivity: true
+        additivity: false
         AppenderRef:
           - ref: EXCEPTION_ROLLING_FILE
       - name: db
         level: info
-        additivity: false
+        additivity: true
         AppenderRef:
           - ref: DB_ROLLING_FILE
 #    监听具体包下面的日志

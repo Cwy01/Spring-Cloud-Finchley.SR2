@@ -1,1 +1,2 @@
-2019-03-05 14:37:46.316 - INFO  [nio-8989-exec-1] c.b.l.c.log4j2Controller       : getBussinessLogger===日志测试
+2019-03-05 16:42:34.950 -ERROR  [nio-8989-exec-1] c.b.l.c.log4j2Controller       : getExceptionLogger==error=日志测试
+2019-03-05 16:42:34.950 - INFO  [nio-8989-exec-1] c.b.l.c.log4j2Controller       : getBussinessLogger==info=日志测试

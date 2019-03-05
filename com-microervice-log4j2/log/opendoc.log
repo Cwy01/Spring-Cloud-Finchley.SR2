@@ -1,22 +1,23 @@
-2019-03-05 14:37:39.862 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting log4j2Application on AWCHJLT098 with PID 4500 (F:\java\bootspace\com-microervice-log4j2\target\classes started by ruinan_wang_ext in F:\java\bootspace\com-microervice-log4j2)
-2019-03-05 14:37:39.862 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
-2019-03-05 14:37:41.952 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8989 (http)
-2019-03-05 14:37:41.984 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8989"]
-2019-03-05 14:37:42.000 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
-2019-03-05 14:37:42.000 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.12
-2019-03-05 14:37:42.016 - INFO  [           main] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\java\jre1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/java/jre1.8.0_191/bin/server;F:/java/jre1.8.0_191/bin;F:/java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;F:\java\jdk1.8.0_191\bin;F:\java\jdk1.8.0_191\class\.;F:\java\consul;F:\java\mysql-8.0.13-winx64\bin;F:\Program Files\Git\cmd;F:\Program Files\nodejs;F:\java\groovy-2.5.6\bin;F:\java\apache-maven-3.6.0\bin;C:\Users\ruinan_wang_ext.AWCHJLT098\AppData\Roaming\npm;F:\java\eclipse;;.]
-2019-03-05 14:37:42.218 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
-2019-03-05 14:37:42.218 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2263 ms
-2019-03-05 14:37:42.281 - INFO  [           main] .b.w.s.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
-2019-03-05 14:37:42.281 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
-2019-03-05 14:37:42.281 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
-2019-03-05 14:37:42.281 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
-2019-03-05 14:37:42.296 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
-2019-03-05 14:37:42.800 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
-2019-03-05 14:37:43.081 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8989"]
-2019-03-05 14:37:43.097 - INFO  [           main] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
-2019-03-05 14:37:43.128 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8989 (http) with context path ''
-2019-03-05 14:37:43.145 - INFO  [           main] o.s.b.StartupInfoLogger        : Started log4j2Application in 3.877 seconds (JVM running for 5.145)
-2019-03-05 14:37:46.267 - INFO  [nio-8989-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-03-05 14:37:46.267 - INFO  [nio-8989-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
-2019-03-05 14:37:46.276 - INFO  [nio-8989-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
+2019-03-05 16:42:28.298 - INFO  [           main] o.s.b.StartupInfoLogger        : Starting log4j2Application on AWCHJLT098 with PID 9104 (F:\java\bootspace\com-microervice-log4j2\target\classes started by ruinan_wang_ext in F:\java\bootspace\com-microervice-log4j2)
+2019-03-05 16:42:28.308 - INFO  [           main] o.s.b.SpringApplication        : No active profile set, falling back to default profiles: default
+2019-03-05 16:42:30.244 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat initialized with port(s): 8989 (http)
+2019-03-05 16:42:30.260 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing ProtocolHandler ["http-nio-8989"]
+2019-03-05 16:42:30.282 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting service [Tomcat]
+2019-03-05 16:42:30.283 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-03-05 16:42:30.295 - INFO  [           main] o.a.j.l.DirectJDKLog           : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [F:\java\jre1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:/java/jre1.8.0_191/bin/server;F:/java/jre1.8.0_191/bin;F:/java/jre1.8.0_191/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;c:\Program Files (x86)\AMD APP\bin\x86_64;c:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;F:\java\jdk1.8.0_191\bin;F:\java\jdk1.8.0_191\class\.;F:\java\consul;F:\java\mysql-8.0.13-winx64\bin;F:\Program Files\Git\cmd;F:\Program Files\nodejs;F:\java\groovy-2.5.6\bin;F:\java\apache-maven-3.6.0\bin;C:\Users\ruinan_wang_ext.AWCHJLT098\AppData\Roaming\npm;F:\java\eclipse;;.]
+2019-03-05 16:42:30.423 - INFO  [           main] o.a.j.l.DirectJDKLog           : Initializing Spring embedded WebApplicationContext
+2019-03-05 16:42:30.423 - INFO  [           main] letWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1987 ms
+2019-03-05 16:42:30.470 - INFO  [           main] .b.w.s.ServletRegistrationBean : Servlet dispatcherServlet mapped to [/]
+2019-03-05 16:42:30.485 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-03-05 16:42:30.485 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-03-05 16:42:30.485 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'formContentFilter' to: [/*]
+2019-03-05 16:42:30.485 - INFO  [           main] AbstractFilterRegistrationBean : Mapping filter: 'requestContextFilter' to: [/*]
+2019-03-05 16:42:30.860 - INFO  [           main] c.ExecutorConfigurationSupport : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-05 16:42:31.140 - INFO  [           main] o.a.j.l.DirectJDKLog           : Starting ProtocolHandler ["http-nio-8989"]
+2019-03-05 16:42:31.156 - INFO  [           main] o.a.j.l.DirectJDKLog           : Using a shared selector for servlet write/read
+2019-03-05 16:42:31.187 - INFO  [           main] o.s.b.w.e.t.TomcatWebServer    : Tomcat started on port(s): 8989 (http) with context path ''
+2019-03-05 16:42:31.187 - INFO  [           main] o.s.b.StartupInfoLogger        : Started log4j2Application in 3.486 seconds (JVM running for 4.76)
+2019-03-05 16:42:34.900 - INFO  [nio-8989-exec-1] o.a.j.l.DirectJDKLog           : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-05 16:42:34.900 - INFO  [nio-8989-exec-1] o.s.w.s.FrameworkServlet       : Initializing Servlet 'dispatcherServlet'
+2019-03-05 16:42:34.909 - INFO  [nio-8989-exec-1] o.s.w.s.FrameworkServlet       : Completed initialization in 9 ms
+2019-03-05 16:42:34.951 - INFO  [nio-8989-exec-1] c.b.l.c.log4j2Controller       : getDBLogger==info=日志测试
