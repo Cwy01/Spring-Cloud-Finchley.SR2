@@ -1,0 +1,138 @@
+server:
+  port: 9118
+  
+spring: 
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/boot?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: 123456
+      # 初始化时建立的连接数
+      initial-size: 5
+      # 最大连接数
+      max-active: 20
+      # 最小连接数
+      min-idle: 5
+      # 获取连接最大等待时间，单位：毫秒
+      max-wait: 2000
+      # 是否缓存preparedStatement
+      pool-prepared-statements: false
+      # 最大preparedStatement缓存数，当pool-prepared-statements=true时需要大于0
+      max-pool-prepared-statement-per-connection-size: -1
+      # 检测连接是否失效的sql
+      validation-query: SELECT 'x'
+      # 检测连接是否失效的超时时间，单位：秒
+      validation-query-timeout: 2
+      filters: stat,wall,log4j2,config
+      time-between-log-stats-millis: 604800000
+#      connection-properties: config.decrypt=true;config.decrypt.key=MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAI0Q56HOXI2Z33kNpgOxvMbaE7BRUw0pZMLPZA0Pe+J/6R7Cq97BUCDygkzL7evUfQmPprNh6KKaSKXV0dBVghcCAwEAAQ==
+      # Spring aop监控的包路径
+      aop-patterns: com.boot.druid.service.*
+      filter:
+        config:
+          enabled: true
+        # 监控统计
+        stat:
+          enabled: true
+          db-type: mysql
+          # 打印慢sql
+          log-slow-sql: true
+          # 超过200毫秒即为慢sql
+          slow-sql-millis: 200
+        # sql防火墙
+        wall:
+          enabled: true
+          db-type: mysql
+          # 对认定的攻击sql进行日志输出
+          log-violation: true
+          # 对认定的攻击sql抛出异常
+          throw-exception: true
+          config:
+            # 是否允许下述操作
+            alter-table-allow: false
+            truncate-allow: false
+            drop-table-allow: false
+            update-where-none-check: true
+            # metadata会暴露数据的表结构
+            metadata-allow: false
+
+      # 数据库连接池监控统计插件
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        # 过滤掉如下请求
+        exclusions: '*.gif,*.png,*.jpg,*.html,*.js,*.css,*.ico,/druid/*'
+      # 数据库连接池监控页面插件
+      stat-view-servlet:
+        enabled: true
+        url-pattern: '/druid/*'
+        reset-enable: true
+        login-username: admin
+        login-password: admin
+        allow:
+        deny:
+  # 设置cglib代理模式，防止非接口代理出错
+  aop:
+    proxy-target-class: true
+
+
+mybatis:
+  typeAliasesPackage: org.spring.springboot.domain
+  mapper-locations: classpath*:mybatis/*Mapper.xml
+    
+swagger:
+  # 公共信息,是否启用swagger，默认：true
+  enabled: true
+  # 标题
+  title: "Spring Boot 使用 Swagger2 构建RESTful API"
+  # 描述
+  description: "Swagger2 Test"
+  version: 1.0.0-SNAPSHOT
+  # 许可证及服务条款信息
+  license: "Apache License, Version 2.0"
+  licenseUrl: "https://www.apache.org/licenses/LICENSE-2.0.html"
+  termsOfServiceUrl:
+  # 维护人
+  contact:
+    name: "Author-Boot"
+    email: "Author-Boot@qq.com"
+    url: "http://localhost:9118/swagger-ui.html"
+  # swagger扫描的基础包，默认：全扫描
+  base-package: "com.boot.druid.web"
+  # 需要处理的基础URL规则，默认：/**
+  base-path: /**
+  # 需要排除的URL规则，默认：空
+# exclude-path: ""
+
+
+# 分组策略
+  docket:
+    apiForUser: 
+      title: 使用 Swagger2 构建RESTful API
+      description: user
+      base-path: /user/**
+    apiForAdmin: 
+      title: 使用 Swagger2 构建RESTful API
+      description: admin
+      base-path: /admin/**
+      
+# 公共参数
+  global-operation-parameters[0]:
+    name: TOKEN
+    description: 鉴权
+    modelRef: string
+    parameterType: header
+    # 公共参数写成requierd, 对于不需要登录的接口随便写一个字符串即可
+    required: true
+  # 通用返回错误码
+  apply-default-response-messages: true
+  global-response-message.get[0]:
+    code: 401
+    message: 401错误
+  global-response-message.get[1]:
+    code: 500
+    message: 后端错误
+    modelRef: ERROR
+  

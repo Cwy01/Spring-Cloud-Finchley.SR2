@@ -1,0 +1,56 @@
+server: 
+  port: 9117
+
+swagger:
+  # 公共信息,是否启用swagger，默认：true
+  enabled: true
+  # 标题
+  title: "Spring Boot 使用 Swagger2 构建RESTful API"
+  # 描述
+  description: "Swagger2 Test"
+  version: 1.0.0-SNAPSHOT
+  # 许可证及服务条款信息
+  license: "Apache License, Version 2.0"
+  licenseUrl: "https://www.apache.org/licenses/LICENSE-2.0.html"
+  termsOfServiceUrl:
+  # 维护人
+  contact:
+    name: "Author-Boot"
+    email: "Author-Boot@qq.com"
+    url: "http://localhost:9117/swagger-ui.html"
+  # swagger扫描的基础包，默认：全扫描
+  base-package: "com.boot.swagger2.controller"
+  # 需要处理的基础URL规则，默认：/**
+  base-path: /**
+  # 需要排除的URL规则，默认：空
+# exclude-path: ""
+
+
+# 分组策略
+  docket:
+    apiForMe:
+      title: 使用 Swagger2 构建RESTful API
+      description: Myself
+      base-path: /user/**
+    apiForOthers: 
+      title: 使用 Swagger2 构建RESTful API
+      description: Others
+      base-path: /api/others/**
+      
+# 公共参数
+  global-operation-parameters[0]:
+    name: TOKEN
+    description: 鉴权
+    modelRef: string
+    parameterType: header
+    # 公共参数写成requierd, 对于不需要登录的接口随便写一个字符串即可
+    required: true
+  # 通用返回错误码
+  apply-default-response-messages: true
+  global-response-message.get[0]:
+    code: 401
+    message: 401错误
+  global-response-message.get[1]:
+    code: 500
+    message: 后端错误
+    modelRef: ERROR

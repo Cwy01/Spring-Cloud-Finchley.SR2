@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.microservice.druid"/>
+			<item value="com.microservice.swagger2"/>
 			<item value="com.microervice.log4j2"/>
 			<item value="com.boot.slf4j"/>
 			<item value="com.boot.test"/>
@@ -15,12 +17,12 @@
 			<item value="com.microservice.jpa"/>
 			<item value="com.microservice.vue"/>
 			<item value="com.boot.auth2.server"/>
-			<item value="com.boot.config.client"/>
-			<item value="com.boot.auth2"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="boot-microservice-druid"/>
+			<item value="boot-microservice-swagger2"/>
 			<item value="com-microervice-log4j2"/>
 			<item value="com-boot-slf4j"/>
 			<item value="com-boot-test"/>
@@ -34,8 +36,6 @@
 			<item value="com-microservice-jpa"/>
 			<item value="boot-microservice-vue"/>
 			<item value="boot-microservice-auth2-server"/>
-			<item value="boot-microservice-config-client"/>
-			<item value="boot-microservice-auth2"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -87,6 +87,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\java\bootspace\boot-microservice-swagger2\pom.xml"/>
 			<item value="F:\java\bootspace\boot-microservice-admin-server\pom.xml"/>
 			<item value="F:\java\bootspace\boot-microservice-eureka"/>
 			<item value="F:\java\bootspace\boot-microservice-auth2"/>
